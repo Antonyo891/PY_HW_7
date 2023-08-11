@@ -4,10 +4,7 @@ def rhythm(str):
     vowels:list='ё у е ы а о э я и ю'.split()
     for word in list1:
         result=len(list(filter(lambda x:x in vowels,word)))
-        if result==0:
-            set1.add(0)
-        else:
-            set1.add(result)
+        set1.add(result)
     return len(set1)==1
 
 
